@@ -7,4 +7,6 @@ gpuList = soup.find_all('div', class_ = "c-shca-icon-item")
 for gpu in gpuList:
     cardNameList = gpu.find('div', class_ = "c-shca-icon-item__body-name").text.replace("  ", "").replace("Zotac", "")
     cardPriceList = gpu.find('div', class_ = "c-shca-icon-item__summary-list").text.replace("+", "")
-    print(f'{cardNameList.strip()} costs {cardPriceList.replace(" ","").strip()}')
+    cardLink = gpu.a['href']
+    print(f'https://www.memoryexpress.com/{cardLink}')
+    print(f'GPU Name: {cardNameList.strip()} \nPrice: {cardPriceList.replace(" ","").strip()} \n')
