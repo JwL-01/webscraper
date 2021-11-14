@@ -7,4 +7,4 @@ gpuList = soup.find_all('div', class_ = "c-shca-icon-item")
 for gpu in gpuList:
     cardNameList = gpu.find('div', class_ = "c-shca-icon-item__body-name").text.replace("  ","")
     cardPriceList = gpu.find('div', class_ = "c-shca-icon-item__summary-list").text.replace("+","")
-    print(f'{cardNameList} costs {cardPriceList}')
+    print(f'{cardNameList.strip()} costs {cardPriceList.replace(" ","").strip()}')
