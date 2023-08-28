@@ -2,7 +2,7 @@
 
 **Learning objectives:**
 Write to file
-Obtain information off html
+Obtain information off website
 
 using python and the soup library
 
