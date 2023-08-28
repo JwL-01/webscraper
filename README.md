@@ -1,6 +1,6 @@
 # webscraper
 
-Learning objectives: 
+**Learning objectives:**
 Write to file
 Obtain information off html
 
