@@ -1,4 +1,4 @@
-# webscraper
+# Python Webscraper
 
 Simple web scraper for collecting GPU prices during the chip shortage. Compiling the data into a text file.
 
